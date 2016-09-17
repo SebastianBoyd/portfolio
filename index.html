@@ -1,848 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Sebastian Boyd</title>
 
-    <title>Sebastian Boyd - Portfolio</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Sebastian Boyd">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
 
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Sebastian Boyd</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">Home</a>
-                    </li>
-                    <li>
-                        <a href="#reflection">Reflection</a>
-                    </li>
-                    <li>
-                        <a href="#WrittenCommunication">Written Communication</a>
-                    </li>
-                    <li>
-                        <a href="#KnowledgeAndThinking">Knowledge and Thinking</a>
-                    </li>
-                    <li>
-                        <a href="#OralCommunication">Oral Communication</a>
-                    </li>
-                    <li>
-                        <a href="#Agency">Agency</a>
-                    </li>
-                    <li>
-                        <a href="#code">Code</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="material.light_blue-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--blue-500 mdl-color-text--white">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Sebastian Boyd</span>
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-button mdl-js-button mdl-button--icon" href="mailto:sebastian.boyd.1@gmail.com" for="email">
+            <i class="material-icons">email</i>
+          </a>
         </div>
-        <!-- /.container -->
-    </nav>
-
-
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Hello</h1>
-                        <h3>I'm Sebastian</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/elonmusk" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/SebastianBoyd" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              Portfolio
             </div>
-
+            <h3>Projects</h3>
+              <p>
+                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+              </p>
+              <p>
+                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+              </p>
+              <p>
+                Tempor tempor aliqua in commodo cillum Lorem magna dolore proident Lorem. Esse ad consequat est excepteur irure eu irure quis aliqua qui. Do mollit esse veniam excepteur ut veniam anim minim dolore sit commodo consequat duis commodo. Sunt dolor reprehenderit ipsum minim eiusmod eu consectetur anim excepteur eiusmod. Duis excepteur anim dolor sit enim veniam deserunt anim adipisicing Lorem elit. Cillum sunt do consequat elit laboris nisi consectetur.
+              </p>
+            <h3>Basic MDL Usage</h3>
+              <p>
+                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+              </p>
+              <p>
+                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+              </p>
+              <p>
+                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+              </p>
+              <p>
+                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+              </p>
+              <p>
+                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+              </p>
+              <p>
+                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+              </p>
+              <p>
+                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+              </p>
+              <p>
+                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+              </p>
+          </div>
         </div>
-        <!-- /.container -->
-
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
     </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	<a  name=""></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row" id="reflection">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Reflection</h2>
-                    <p class="lead">I think that the following samples of my work show how I have veolved as a learner throughout my two years as a part of TREK. As a student I am a hard worker and can find somthing interesting in any topic. 
-</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row" id="WrittenCommunication">
-                <div class="">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Written Communication</h2>
-                    <p class="lead">I think that written communication is one area I have improved alot over the last two years. I still have a long way to go though. Writing is an incredibly powerfull way of conveying everything from how to preform a chemistry experiment to telling an engaging story. My strongest area right now is the fature story, I like how it combines some elements of narrative writing while remaining mostly based on facts.</p>
-                    <p class="lead">10th Grade - Exercise Feature Story - Expository</p>
-                    <p><span style="font-weight: 400;">He just finished 5 hours of homework after an exhausting day. He collapsed on the couch and opened Netflix. Dirty laundry scattered the floor. He knew there were one thousand things to do but he just needed a break. There was no time for exercise, or just to eat a healthy dinner. This is the life of one overworked high school student among millions around the world.</span></p>
-                    <p><span style="font-weight: 400;">Exercise is a vital part of any person&rsquo;s life and is especially important for teens. Exercising leads to higher grades, better mental function, and reduced stress. Drake students still are not getting enough exercise. It is important to exercise regularly as a teen because what people do as a teenager can have huge effects on the rest of their lives. (</span><span style="font-weight: 400;">Reaney</span><span style="font-weight: 400;">, 2015) People who exercised a lot when they were younger are much more likely to continue throughout the rest of their life. Thousands of years ago people got their exercise by working hard all day hunting animals or working in the fields but modern life in a wealthy country no longer requires this. Someone could easily go their entire life without ever exercising and still be very successful. People evolved to handle physical labor all day and life without it destroys people&rsquo;s health. </span></p>
-                    <p><span style="font-weight: 400;">Sir Francis Drake High School is located in the affluent county of Marin. Although Marin is known for being very healthy and has one of the longest life expectancies in the country, its exercise rates are below recommendations. Last week I talked with someone trying to change that, Doug Donnellan. He is a P.E. at Drake for many years. He spends every day teaching teens about exercise. We met under the fluorescent lighting if the main gym at the high school where he told me his many thoughts on exercise.</span></p>
-                    <p><span style="font-weight: 400;">I also talked to Leo Krashanoff, a Drake student on the mountain biking team, to get a teen&rsquo;s unique perspective on exercise. He talked about how it is largely the responsibility of teens to motivate themselves and commit to regular exercise. Leo said it is important for people to the support of their friends because they can be great motivators to exercise. He also can speak from personal experience about exercise&rsquo;s benefits &ldquo;Exercise reduces my stress and makes it easier for me to focus in school&rdquo; (Krashanoff, 2015)</span></p>
-                    <p><span style="font-weight: 400;">At Drake High School, students have a lot of work to do to meet the targets for exercise. With less than half of students meeting exercise targets. Drake is a school where most students go to college and there is a lot of pressure to do well in school. All this stress and lack of time can lead people to give up on part of their life. Often that essential part is exercise. Exercise even help reduce the stress that can prevent it from happening. Only 54% of freshmen and 46% of juniors at Drake get at least 30 minutes of exercise 5 days a week. (WestEd, 2014) It is recommended that teens get 60 minutes of exercise 7 days a week. (CDC, 2015) Our society needs to make a big change to how the health of teens is treated.</span></p>
-                    <p><span style="font-weight: 400;">Most of the people not meeting exercise goals are not playing sports. (Donnellan, 2015) Some people just don&rsquo;t want to or don&rsquo;t have the time to play sports. That is okay but &ldquo;I don&rsquo;t like sports&rdquo; can&rsquo;t be an excuse to not exercise. There are plenty of other ways to get exercise and it</span> <span style="font-weight: 400;">is important for all people. Anyone can go hiking, jogging or go to a gym. &nbsp;Focus needs to be on this group most specifically because they need the opportunity to have an active lifestyle.</span></p>
-                    <p><span style="font-weight: 400;">In their junior and senior years many students are under much more academic stress and have very little time. They are massively over scheduled every single day. In one day they go to school for 7 hours, complete several hours of homework, spend time with friends, eat and get too little sleep. Many must feel they simply have no time to do any exercise. Even if they have a little time where they could fit in some exercise they feel that it wouldn't be worth it to exercise for so little time. While it is better to get more exercise, for people that really don&rsquo;t have the time there are several different short workouts. Research shows that some workouts, as little as one minute, can have huge health benefits. (Reynolds, 2014) &nbsp;Teens need to know that any amount of exercise is helpful and it is worth all the time they can give it. One way to teach teens about this is through Drake&rsquo;s P.E. program.</span></p>
-                    <p><span style="font-weight: 400;">The most important part of P.E. is exercising regularly. P.E. is a large block of time 3 days a week that could make it much easier for teens to get regular exercise. This time is very valuable but a lot of it is being wasted. There is too much of a focus on learning things on paper and too little time devoted to the actual activity. In the recent ultimate frisbee unit students rarely actually played the game for more than ⅓ of the class. The rest of the time was spent changing into and out of uniforms, being instructed about the rules and techniques, and testing. Most people will never need to know the rules of ultimate frisbee and as long as they can throw the frisbee the technique does not matter. By spending time on these things students are missing out on the most important part, forming a habit of regular exercise.</span></p>
-                    <p><span style="font-weight: 400;">Drake high school and the parents of teens need to change how they prioritize the importance of various aspects of teen&rsquo;s lives. Exercise needs to be a bigger part of every student's life. It has amazing benefits in both physical and mental health but they are not being taken advantage of. The workload of upperclassmen should be reduced to allow for students to care about their wellness in all aspects of their life. The P.E. program is a great opportunity to give students some of the exercise they need and teach them how to get exercise in their daily life but too much time is wasted. If we don&rsquo;t do something now we won&rsquo;t let teens live up to their full potential.</span></p>
-                    <p><strong><strong><br /><br /></strong></strong></p>
-                    <p><span style="font-weight: 400;">References</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">CDC. (2015, June 04). How much physical activity do children need? Retrieved from http://www.cdc.gov/physicalactivity/basics/children/index.htm</span></p>
-                    <p><span style="font-weight: 400;">Donnellan, D. (2015, December 2). Teen Exercise [Personal interview].</span></p>
-                    <p><span style="font-weight: 400;">Krashanoff, L. (2015, December 14). Exercise in my life [Personal interview].</span></p>
-                    <p><span style="font-weight: 400;">Reaney, P. (2015, August 3). Women who exercise during adolescence may benefit for years. Retrieved from https://www.washingtonpost.com/national/health-science/women-who-exercise-during-adolescence-may-benefit-for-years/2015/07/31/a7d70da6-3790-11e5-9d0f-7865a67390ee_story.html</span></p>
-                    <p><span style="font-weight: 400;">Reynolds, G. (2014, December 31). The Super-Short Workout and Other Fitness Trends. </span><em><span style="font-weight: 400;">New York Times</span></em><span style="font-weight: 400;">. Retrieved December 8, 2015, from http://well.blogs.nytimes.com/2014/12/31/the-super-short-workout-and-other-fitness-trends/?_r=0</span></p>
-                    <p><span style="font-weight: 400;">WestEd. (n.d.). Sir Francis Drake Secondary 2013-2014 Main Report. Retrieved December 6, 2015, from https://s3.amazonaws.com/echo_files/20151113/_1447443134__1446574621_TUH_Sir_Francis_Drake_High_1314_CHKS.pdf</span></p>
-                    <br />
-                    <p class="lead">9th Grade - Congo Story Post Imperialism - Narrative</p>
-                    <p><span style="font-weight: 400;">Prologue</span></p>
-                    <p><span style="font-weight: 400;">The year is 2015, 55 years after the Congo became independent from Belgium. The effects of imperialism are still affecting the congo every day. Just like King Leopold did long ago, big companies from all over the world exploit the Congo for minerals, cheap labor, and oil. As soon as the Belgians left, the country fell into disarray. The government does not have enough money to maintain the country properly and corruption is everywhere.</span></p>
-                    <p><strong><strong><br /><br /><br /></strong></strong></p>
-                    <p><span style="font-weight: 400;">I am in the passenger seat of a Jeep bouncing along a dirt road about 25 miles out from the nearest town. The trees around me a bright green, greener than the trees near where I grew up in America. The dirt road beneath me has not been well maintained, and in the wet season roads often wash away when the rivers flood so we have to be careful. Today the wind is blowing to the west so the sky is clouded by the smog from where the forests are being burned down in a government program to clear space for farmland. </span></p>
-                    <p><span style="font-weight: 400;">I yell to the driver over the roar of the wind in my ears &ldquo;How far away are we? I need to be there by 3:00.&rdquo; He replies in a strong accent &ldquo;We&rsquo;re almost to the main road, its just a few minutes from there.&rdquo; If I don&rsquo;t make it on time this whole deal could fall through. I work for an American electronics company and I have been in the Congo for the last year looking at mines in the region to be our suppliers of rare minerals. My company sells to major electronics brands such as Apple and Samsung. I am on my way to inspect a mining site that we are looking to get a supply of </span><span style="font-weight: 400;">tantalum</span><span style="font-weight: 400;"> from.</span></p>
-                    <p><span style="font-weight: 400;">A few minutes later as we come around a turn I see someone in the road up ahead. The driver brings the car to an abrupt stop. The man in the road is wearing an official uniform and carrying a big gun. He and another man in a uniform walked up to the car and said &ldquo;Before you continue we need to check your documents&rdquo; The driver and I hand him our documents and hope that they will let us pass. But we are unlucky today and they say &ldquo;Your documents are not in order you will have to come with us.&rdquo; I hand one of the officers a ten thousand franc note or about ten dollars. They apologize for making us wait and we are on our way. </span></p>
-                    <p><span style="font-weight: 400;">I learned quickly when I first arrived in the Congo that the authorities are so corrupt it is impossible to do any business without bribing many people. It is so hard to get permits for anything that virtually all businesses just break laws and pay bribes or hire guards to keep the police away. The police are so underpaid and understaffed that they would never take down a big company for working illegally.</span></p>
-                    <p><span style="font-weight: 400;">Our Jeep rolled to a halt in front of the mining site. There are a few big concrete industrial buildings next to the big mining pit. The pit is stepped down into the ground and what I can see is as big as a football field. It is an open pit mine so there are no mineshafts going deep underground. The side of one hill is being gradually removed as the mine is dug out. The concrete buildings are simple but they are much more expensive than the common mud buildings in most of the towns.</span></p>
-                    <p><span style="font-weight: 400;">The pit is filled with thousands of workers from the surrounding villages. For many here it is the only source of work. The pay is a few dollars a day but it is better than what the workers get at other mines. </span></p>
-                    <p><span style="font-weight: 400;">A big man in a t-shirt strolls up to me and introduces himself as the owner of East Congo Mineral Holdings. "We produce the purest minerals for the best price" he said instinctively as we walked toward the concrete buildings. My driver is also the bodyguard hired by my company to protect me for my stay in the Congo so he accompanied me. Once inside we negotiated the price and how much minerals he could supply. I told him that I needed to inspect the working conditions of the workers in order to get approval from the company.</span></p>
-                    <p><span style="font-weight: 400;">Outside the thousands of workers in the pit were still working. There was no big machinery, all the mining was done by manual labor. I walked down into the pit avoiding muddy puddles in order to keep my shoes clean. I stopped by one of the workers and asked him about his job. He had a tired look in his eyes and was drenched in sweat from digging all day in the humid jungle. He replied in french so I had my driver translate for me he said "Every day I come here to work in the mines, it is hard work but I have no choice. There is no other work here, with the rebels destroying things every day and a government so corrupt no people come for tourism or invest and start a business. My father said that belgium is to blame. When we became independent belgium trashed everything and left us to fend for ourselves with no resources. People like you are no different you just take the resources you can and leave the country in ruins" </span></p>
-                    <p><span style="font-weight: 400;">Of course I already knew all about the history of the Congo but I had thought of me and my company as different. We were paying for the resources we took and provided jobs in a place with no work. But we did not pay taxes and almost every day there was a story in the news of people getting shot over the theft over a few grams of minerals. </span></p>
-                    <p><span style="font-weight: 400;"> It is the end of the day and I have done a full survey of the mining site I am tired so I instruct my driver to drive me to </span><span style="font-weight: 400;">Kinshasa</span><span style="font-weight: 400;"> for dinner. As we head towards </span><span style="font-weight: 400;">Kinshasa</span><span style="font-weight: 400;"> the thick forest subsides into a bustling city. We are approaching the Congo river, one of the biggest trade routes in the Congo. This river was once used by the colonists to ship rubber and ivory from the plantations deep in the forest to the ocean. Today it is still the only way to get to many remote places deep in the jungle. The houses around me are mostly made of mud brick with the occasional stone house of one of the wealthy residents. </span></p>
-                    <p><span style="font-weight: 400;">We pull up to the front of a cafe in the center of the city. I go inside and order dinner. I always come here because it is the only place within a hundred miles that has cell service. A few minutes into dinner and I hear a noise out in the street. People are yelling and chanting something. I get up to go out and see what the commotion is but my bodyguard tells me to wait. He steps outside into the bustling street. As they get closer I can start to make out what some people are saying. I hear someone yell &ldquo;Our land our minerals&rdquo;. </span></p>
-                    <p><span style="font-weight: 400;">When he is back a few minutes later he had a worried look on his face. He says loudly over the growing sound of chanting &ldquo;They are are protesting how they are being treated in the mines. They want a face to blame for all the trouble they are facing and you would be perfect. We have to get out of here!&rdquo; The restaurant is full and everyone is standing up, trying to figure out what is going on. My bodyguard pushes towards the back of the restaurant and takes me with him. We head for a side door to an alley off the main street. Outside we can see the protesters marching down the main street. We can&rsquo;t get to the Jeep in the front so we walk down the alley. </span></p>
-                    <p><span style="font-weight: 400;">As we turn the corner into another side street we hear a loud bang from back by the restaurant. Gunfire has started and the protests are now violent. My bodyguard pulls out his gun and we start sprinting in the opposite direction. A few blocks later we hear another shot BANG. Soon we hear the sound of sirens wailing as they rush towards the scene. When we are a safe distance away I pull out my satellite phone and call my company back in America to ask for assistance. A few minutes later we hear another siren this time coming straight towards us. When it gets here I see that it is a police car. </span></p>
-                    <p><span style="font-weight: 400;">A man gets out and say to us &ldquo;We are looking for the employees of East Congo Mineral Holdings&rdquo;</span></p>
-                    <p><span style="font-weight: 400;">I reply &ldquo;That's us, why are you here?&rdquo;</span></p>
-                    <p><span style="font-weight: 400;">&ldquo;We were sent by your company to get you out of here. I have been instructed to drive you to the capital, you will be safe there&rdquo;</span></p>
-                    <p><span style="font-weight: 400;">We get in the car and start driving towards the capital. I can finally breath normally and my heart rate slows down to normal.</span></p>
-                    <p><span style="font-weight: 400;">The next day I am back at my house reading a newspaper from the UK. On the front page there is a story about the riot. The headline reads &ldquo;Thirty six killed in riot in </span><span style="font-weight: 400;">Kinshasa</span><span style="font-weight: 400;">&rdquo;. In the article it explains that most of the casualties were from when the police opened fire on the protestors. Twenty one of the casualties were caused directly by the police. I also read a local newspaper and the riots were only briefly mentioned on the third page and there was no reference to the police being a cause of death. The government heavily censors all media before it can be published and the newspaper I read from the UK is not available here, I got it shipped specially for me. There is no internet in almost all of the Congo so there is no way for most people to get accurate accounts of any events. Because of all this most of the Congo will not even hear about any unrest and will not be able to help change.</span></p>
-                    <p><span style="font-weight: 400;">I call up my company to explain to them what happened yesterday. I say that the Congo is too unstable to run any business from even with bodyguards and working with the police. They disagree and I get into a long argument with my boss. After a while we come to an agreement. I am going to to be transferred to another part of the world where I will be safer and someone else will come here to replace me. In a few weeks they will have a replacement ready and I can leave.</span></p>
-                    <p><strong><span style="font-weight: 400;">It is a few weeks later and I am on a plane. I am off to China to continue my work. I have heard rumors of a mining boom in the north of China but the government is trying to hide it to avoid scrutiny about mining practices from the rest of the word. I may be safer but almost everything else looks like it will be about the same. As long as there is money to be made powerful countries will always exploit the weak. Now I need to rest so I can don&rsquo;t have jet lag and can go to work tomorrow. </span></strong></p>
-                    <p class="lead">9th Grade - Drone Article - Argument</p>
-                    <p><span style="font-weight: 400;">The Risks of Drone Combat and the Advancement of Technology</span></p>
-		<p><span style="font-weight: 400;">Sebastian Boyd</span></p>
-		<p><span style="font-weight: 400;">Drones are taking an ever larger role in U.S. military operations around the world. The Fiscal Year 2016 US military budget includes almost $3 billion for new Reaper drones and other unmanned aircraft (Gettinger). This is part of a shift lead by the Obama administration towards replacing many fighter jets in dangerous military operations with their unmand counterparts. </span></p>
-		<p><span style="font-weight: 400;">In the world today the US and its allies can strike targets overseas with very low risk and cost. They can do this in part because of drones. This is a new type of warfare that is very different from what was seen in the world wars. The fact that drones pilots can be on the other side of the world disconnects them from the people they are killing. The government is often slow to pass legislation about new technology so there is not enough oversight over the use of drones. The low cost of drone warfare leads to people more likely to support another war.</span></p>
-		<p><span style="font-weight: 400;">Drones allow people to be killed by people sitting at desks in air conditioned offices from the other side of the world. This makes killing like a video game. You can fight a war in front of a computer monitor. Like a video game you have no connection with the people you kill, they are just dots in an aerial photo. This also makes the training of soldiers easier, people are used to playing and killing people on video games. In a videogame if you make a mistake you can just try again. It is the same with drones, the cost is so low compared to a fighter jet that they are almost disposable. The people flying the drones never experience the terror of battle so it is much easier for them to kill. There have been over 400 drones strikes in pakistan so it is not surprising that one 13 year old from Pakistan said that he feared blue skies because the drones don't fly when it is cloudy.</span></p>
-		<p><span style="font-weight: 400;">Drones make war very different than it was just a few years ago but the legislation that governs them has not caught up. There is not enough oversight over the use of drone strikes overseas. According to the department of justice as reported in Last Week Tonight drone strikes are justified if there is an imminent threat on US interests. That sounds good but there is a loophole that an imminent threat "does not require the United States to have clear evidence that a specific attack on U.S. persons or interests will take place in the immediate future." That loophole makes it much too easy to kill someone without due process. Sometimes it is never known who exactly is killed in a drone strike or even how many are killed. The reason that this can happen is that the public doesn't care that much about how drones are used. The idea of them sounds nice, cheaper and more precise fighting, so people don't bother to think much about them in their everyday life.</span></p>
-		<p><span style="font-weight: 400;">The risk of lives and money is so low compared to traditional warfare that people are more likely to support a drone war. In the world wars it was terrible for people on both sides of the battle and this added a huge cost to war. Wars were only fought when people believed very strongly in what they were fighting for. Today drones are changing that. You no longer have to put yourself in any risk to fight a war. If they can&rsquo;t get hurt people will be more willing to fight for something they don&rsquo;t believe in and this will lead to more war. </span></p>
-		<p><span style="font-weight: 400;">We need to look closely at the costs and benefits of drone warfare in the next few years as they are increasingly used in battle. Like all new technology with new capabilities people need to decide how much it should be used and what regulations need to be put on it. Just like we regulated poison gas after the world wars we need to decide if we must do the same for drones new technology on the battlefield can change warfare in unexpected ways.</span></p>
-		<p><strong><strong><br /><br /><br /><br /><br /><br /></strong></strong></p>
-		<p><span style="font-weight: 400;">References</span></p>
-		<p><span style="font-weight: 400;">Coll, S. (2014, November 24). Obama's Drone War. </span><em><span style="font-weight: 400;">The New Yorker</span></em><span style="font-weight: 400;">. Retrieved March 10, 2015, from </span><a href="http://www.newyorker.com/magazine/2014/11/24/unblinking-stare"><span style="font-weight: 400;">http://www.newyorker.com/magazine/2014/11/24/unblinking-stare</span></a></p>
-		<p><span style="font-weight: 400;">The article in the new yorker tells a story of a man who drives around pakistan photographing the sites of drone strikes after they happen. The photography helps shed some light on the hidden drone strikes. There is a lot of technology in drones and it gives them amazing capabilities that normal troops cannot. Pilots can command the drone to hover over a target, constantly recording video and when it is ready fire a missile and eliminate the target. The fact that the pilot is on the other side of the world disconnects them from the fact that with the press of a button they can kill someone. According to obama the drones can target much more specific targets than any other aircraft. There have been over 400 drones strikes in pakistan.</span></p>
-		<p><span style="font-weight: 400;">This article is useful because it brings attention to the human side of warfare. It talks about the effects of photographs on bring to attention to the issues with drones. The pictures that were taken in world war one so the same thing. This is a new technology with new capabilities people need to decide how much it should be used and what regulations need to be put on it. This article brings attention to that. It is similar to how poison gas was a new technology and it needs to be regulated even in wartime.</span></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">Gettinger, Dan. "Drones in the Defense Budget." Center for the Study of the Drone. Bard College, 04 Feb. 2015. Web. 2 Apr. 2015.*</span></p>
-		<p><span style="font-weight: 400;">Golson, J. (2014, September 16). A Military-Grade Drone That Can Be Printed Anywhere. Retrieved March 10, 2015, from </span><a href="http://www.wired.com/2014/09/military-grade-drone-can-printed-anywhere/"><span style="font-weight: 400;">http://www.wired.com/2014/09/military-grade-drone-can-printed-anywhere/</span></a></p>
-		<p><span style="font-weight: 400;">Researchers funded by a department of defence contractor made a drone that can be 3d printed on the battlefield. It is not a predator, just a small reconnaissance drone but it is still very important. The drone just cost 2,500 dollars to make so with the military&rsquo;s budget it is disposable. Because it is able to be 3d printed on the battlefield it can be custom made for a specific mission depending on requirements such as speed, range, and stealth. With such a customizable robot drones will be able to take away even more of the risk in battle. </span></p>
-		<p><span style="font-weight: 400;">This drone is relevant to my research because it shows how much the risk of warfare is decreasing. &nbsp;The risk of life lost and the cost of weapons is decreasing so much compared to how it was increasing in the world wars. In my writing I can explain how a technology has gotten so much better at killing people that casualties have increased but now the war is moving away from people so less harm is done. This article demonstrates the economics of technology and how prices decrease over time. This relates to how wars are becoming more and more efficient. </span></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">Kill or capture? (2013, October 12). Retrieved March 10, 2015, from </span><a href="http://www.economist.com/news/united-states/21587860-two-raids-special-forces-hint-tactical-shift-barack-obama-kill-or-capture"><span style="font-weight: 400;">http://www.economist.com/news/united-states/21587860-two-raids-special-forces-hint-tactical-shift-barack-obama-kill-or-capture</span></a></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">Obama, B. H. (2013, May 23). Obama&rsquo;s Speech on Drone Policy Transcript. Retrieved March 10, 2015, from </span><a href="http://www.nytimes.com/2013/05/24/us/politics/transcript-of-obamas-speech-on-drone-policy.html?pagewanted=all"><span style="font-weight: 400;">http://www.nytimes.com/2013/05/24/us/politics/transcript-of-obamas-speech-on-drone-policy.html?pagewanted=all</span></a></p>
-		<p><span style="font-weight: 400;">In his speech President Obama defends the use of drone strikes in foreign nations. He says drone strikes are much more precisely targeted than a full on attack with troops on the ground. There is strong oversight over the use of drone strikes. Congress is briefed on all drone strikes. There was a drone strike used on an American citizen. It is justified to kill american citizens with drones when they are fighting against the us overseas. No drone strikes will take place on us soil. Drone strikes don&rsquo;t risk the lives of american soldiers because they don&rsquo;t have to go into battle. President has responsibility to protect the people of the United States and sometimes drones are the only option.</span></p>
-		<p><span style="font-weight: 400;">This source shows how drones can have many advantages over troops. Compared to gas and other terrible weapons in WW1 drone strikes are much less destructive. The point about how it is better not to risk the lives of american soldiers is appealing. &nbsp;This source is reliable and a primary source but may be bias. Many of the facts will be good to use as contrast to the world wars. Some statements made by this source conflict with other sources such as how accountable people are for drone strikes. This is useful because it provides the viewpoint of one of the people that are in charge of warfare.</span></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">Oliver, J., &amp; Stanton, L. (Producers). (2014, September 28). </span><em><span style="font-weight: 400;">Last Week Tonight with John Oliver: Drones</span></em><span style="font-weight: 400;"> [Video file]. Retrieved March 10, 2015, from </span><a href="https://www.youtube.com/watch?v=K4NRJoCNHIs"><span style="font-weight: 400;">https://www.youtube.com/watch?v=K4NRJoCNHIs</span></a></p>
-		<p><span style="font-weight: 400;">Drones give the US government an incredible amount of power to kill people on the other side of the world very cheaply and with low risk. There is not enough oversight on the use of drones and how targets are chosen. For a drone strike to be approved there must be an "imminent threat" on US security or interests. This sounds reasonable but loopholes have been created that allow almost anyone to be a target. Drones can also cause a lot of collateral damage, and sometimes it is not even know how many people are killed in a drone strike. Overseas drone strikes are so common now that it is very rare for them to be reported in the news. The presence of drones in some counties have caused people to fear blue skies because the drones don&rsquo;t fly when the sky is grey.</span></p>
-		<p><span style="font-weight: 400;">This source draws attention to the many downsides of drone warfare. It brings attention to the fact that unlike the world wars that used all of a nation's resources many conflicts today are not even thought about in the daily lives of most people. It shows how people don&rsquo;t care enough to do anything because they are disconnected. It is relevant to the topic of technology and war, more specifically drones, because gives a good explanation of what life is like under the eyes of drones endlessly patrolling the sky. This source does not give the other side of the argument about the benefits of drones.</span></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">Shane, S. (2013, February 08). Debating a Court to Vet Drone Strikes. Retrieved March 10, 2015, from </span><a href="http://www.nytimes.com/2013/02/09/world/a-court-to-vet-kill-lists.html"><span style="font-weight: 400;">http://www.nytimes.com/2013/02/09/world/a-court-to-vet-kill-lists.html</span></a></p>
-		<p><span style="font-weight: 400;">The new york times argues that there should be a special court system to approve and oversee the use of military drones in warfare. This is similar to the Foreign Intelligence Surveillance act that requires all surveillance to be approved by a federal judge. The articles describes some issues that this will cause such as how a drone strike might be needed immediately and it takes time go get approval from a judge. If the judge is rushed to make a decision then they may make an unjust one. To resolve this they propose that instead of approving drone strikes when they are about to happen judges can approve that a suspect is put on a kill list.</span></p>
-		<p><span style="font-weight: 400;">This article instead of just stating problems gives a clear solution. This article is relevant to my research because it highlights how people are no longer just concerned about winning a war, they also want military decisions to be just. This is one of the main differences between the world war and wars today, they are much smaller conflicts in terms of cost and influence in daily life. It also similar to how in WWI a new weapons was used, gas, and it needed new rules to regulate it.</span></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">* Indentation not working</span></p>
-		<p><strong><strong>&nbsp;</strong></strong></p>
-		<p><span style="font-weight: 400;">Image: http://upload.wikimedia.org/wikipedia/commons/c/cd/MQ-9_Reaper_taxis.jpg</span></p>
-		<p><span style="font-weight: 400;">By Brian Furguson</span></p>
-		<p><br /><br /></p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row" id="KnowledgeAndThinking">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Knowledge and Thinking</h2>
-                    <p class="lead">10th Grade - Sold Reading Journal - Reading Analysis</p>
-                    <p><span style="font-weight: 400;">Part 1</span></p>
-                    <table>
-                    <tbody>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;Each morning as I go about my chores-straining the rice water, grinding the spices, sweeping the yard-my little black-and-whites pickled goat, Tali, follows at my heels.&rdquo; (5)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">I think the author is personifying the goat a lot in this chapter so later it will mean something to the reader when it is inevitably sold or eaten. I think that in some ways the goat is replacing her friend, Gita.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;Even when she is standing upright to scan the sky for rain clouds, my ama&rsquo;s back is stooped.&rdquo; </span></p>
-                    <p><span style="font-weight: 400;">&ldquo;Her slender back, which bears our troubles-and all our hopes-is more beautiful still&rdquo; (7)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">As a poor woman in rural Nepal Ama has to bear a huge burden. Here bent back both shows how she has to do huge amounts of physical labor working in the rice fields and how she is under a huge burden to protect her daughter from hunger and her step father. Lakshmi understands this so she finds her back beautiful. </span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;In the rainy months, they patch the crumbling mud walls of their huts and keep the fire going so that yesterday's gruel can be tomorrow&rsquo;s dinner.&rdquo; (10)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">The crumbling huts and damage of the rain is setting up to put the family in debt, there will be no other option than to have Lakshmi work in the city. The word choice of gruel is important it has much more of a connotation around being poor than a word like oatmeal.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;I understand slowly, then all at once, that my stepfather has taken my cucumbers to Bajai Sita, the old trader woman and sold them. I understand, too, why his cot is empty. Most likely, he has spent the night gambling-and losing-at the tea shop.&rdquo; (24)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This quote helps solidify Lakshmi&rsquo;s stepfather as an unreliable gambler that is only a drain on their lives. I wonder why they don&rsquo;t kick him out, he has little to offer. I think that this is to set him up to do something big to harm either Lakshmi or Ama later in the book.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;I shut my eyes tight, letting the tears that had been gathering there finally spill down my cheeks, where they could hide inside the rain.&rdquo; (25)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Lakshmi feels trapped in her situation, with the baby not getting enough food, not enough rain and the constant drain of her stepfather&rsquo;s gambling. I think she is worried to add to Ama&rsquo;s many problems so she hides her fear and sorrow. The rain is both a relief and another source of fear, their hut may not withstand heavy rain in the winter. </span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;Run off and buy yourself a sweet cake, she says, like the other children.&rdquo; (42)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Although Lakshmi is already working and will later be sold into sex slavery she is still a child and the author wants to emphasize this. </span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;I don&rsquo;t understand at all. a great deal of money has been paid for work I have not yet done.&rdquo; (54)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This is the first sign that something about this deal to work in the city is wrong. I wonder how long it will take her to realize what is happening</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;She points to the metal wagon&rdquo;</span></p>
-                    <p><span style="font-weight: 400;">&ldquo;Suddenly the beast roars, a hundred times louder than my stepfather&rsquo;s motorcycle, and I cry out in terror&rdquo; (63)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Lakshmi&rsquo;s encounter with cars shows her ignorance of life outside the village where she has always lived. She will not be ready to face the new challenges the city will face and or know how to avoid danger.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;You must call me husband.&rdquo;</span></p>
-                    <p><span style="font-weight: 400;">&ldquo;The border is a very dangerous place, he says, There are bad men there, men with gus, men who might try to take you away from me and Auntie&rdquo; (76 - 77)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Lakshmi is being tricked into helping her captors get her across the border. I imagine there would be people on the lookout for girls traveling with strangers and without their parents so pretending to be his husband would help lower suspicion.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;One of the men in the crowd throws his cigarette butt at her feet. Another one spits in her direction.&rdquo; (85)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">A girl tried to escape but she was chased down by a group of traffikers and attacked. Lakshmi does not seem to understand what is going on still she asks about what is happening to her but then continues on the train.</span></p>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">Part 2</span></p>
-                    <table>
-                    <tbody>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;There is no chatter or laughter like there is when the village women gather.</span></p>
-                    <p><span style="font-weight: 400;">Instead they are all entranced by a black box with a large glass window in front.&rdquo; (98)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">A television and the money required to but it can have a huge impact and highlights the differences between urban and rural life. In some ways it seems to be described similar to the drugs she was given, how it entranced and silenced the people watching.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;Each day, a thousand people pass below my windows. Children on their way to school. Mothers hurrying home from the market. Rikshaw pullers, vegetable sellers, street sweepers and alms-seekers.</span></p>
-                    <p><span style="font-weight: 400;">Not one looks up.&rdquo; (109)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">The author is showing how Lakshmi is invisible to society, people go about their daily business without noticing what is happening to her. People choose to look the other way, probably because they feel powerless to help so block it from their minds.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;The Americans will try to trick you into running away, says Anita. Don&rsquo;t be fooled. They will shame you and make you walk naked through the streets.&rdquo;</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">I was very interested by this quote. My guess is that this is only a rumor spread by the girls&rsquo; captors to keep them from running away. Is there any truth to this? This is such a provocative statement I think it will be important later in the book. It must be foreshadowing that Americans or other foreigners will help her escape.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;There is another way to use a shawl, she says. I can not tell from her always frowning face if she is being kind or cruel.</span></p>
-                    <p><span style="font-weight: 400;">That new girl, the one in your old room, she says. Yesterday morning Mumtaz found her hanging from the rafters&rdquo; (143)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">The mention of suicide connects this story to those in rich places such as where we live but still have high suicide rates. It also helps people grasp the severity of the situation they are in. By having the girl who committed suicide stay in Lakshmi&rsquo;s old room it connects her and brings her closer, showing she could easily been pushed to the same point.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;We all need to pretend, she says, If we did not pretend, how could we live?&rdquo; (144)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">People in situations like this have very few options most of the time and pretending things are better is one way to cope. It also is one more way the author is connecting Lakshmi to children and I think the author is emphasizing how they have no secure childhood and they have no way to experience the joy of childhood</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;And they are gone, and I am alone to consider and odd and somewhat sour feeling: disappointment that the man did not choose me&rdquo; (150)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This makes no sense to me. The only explanations I could come up with are that she is experiencing Stockholm syndrome or that she will do anything to shorten the time she is trapped here so she is paying off her debts. How many of the other people around her are thinking the same thing?</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;But sometimes I find myself hating him.</span></p>
-                    <p><span style="font-weight: 400;">I hate him for having schoolbooks and playmates.</span></p>
-                    <p><span style="font-weight: 400;">I hate him for having a mother who combs his hair on the mornings she&rsquo;s feeling well enough.</span></p>
-                    <p><span style="font-weight: 400;">And for having the freedom to come and go as he pleases&rdquo; (151)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">By talking about how Lakshmi is jealous of a kid just living a somewhat normal life the author connects Lakshmi to the child emphasising that she is only 13. It talks about something many would consider a basic right as a luxury to be jealous of.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;Policemen are supposed to stop people lake Mumtaz from selling girls, she says, But she gives this one money each week and he looks the other way&rdquo; (159)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This quote adds to how these people have been failed by everyone that is supposed to do something and stop human trafficking. It also is important because it shows how anyone can be corrupted by something and for many it is money and power.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;I also learned that the David Beckham boy&rsquo;s name is Harish. David Beckham, it seems is some kind of god&rdquo; (165)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">It is very interesting the take another culture could possibly have about my own given too little information. I know very little about the culture and religion in Nepal and India so I could easily make similar mistakes. To Lakshmi Harish seems like he has been helped by God because he has opportunity so to live a normal life she no longer has and he can continue his education.</span></p>
-                    <br /><br /></td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;She will maim it-cut off a hand, a foot-and sell it to a beggar woman, she says. Soft hearted people will give an extra rupee or two if you have a sick baby.&rdquo;</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This adds to all the times Lakshmi has felt the people in the city are all mean and don&rsquo;t respect each other compared to life in her village. The author used the baby to startle the reader and show how terrible. The choice of calling people that help beggars soft makes it seem like the few kind people in the city are suckers and weak. It provides background to why so many are selfish in the city.</span></p>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">Part 3</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <table>
-                    <tbody>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;But I do know, from this storybook that this America is a strange place.</span></p>
-                    <p><span style="font-weight: 400;">Everyone there is as rich as a king</span></p>
-                    <p><span style="font-weight: 400;">The birds there are big as men. (174)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">America because of a combination of its global military presence and its media exports is idealized or hated throughout the world. From the tiny snippets of information Lakshmi has about America it is inflated to something imaginary.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">Sometimes I see a girl who is growing into womanhood.</span></p>
-                    <p><span style="font-weight: 400;">Other days I see a girl growing old before her time. (178)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This sentence demonstrates how Lakshmi both is ready to fight for her survival and grow past all she has gone through and how she sometimes feels the battle has been lost, it is too late to change her fate.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">&ldquo;I thought you said they would honor you and thank you&rdquo;, I say. She snorts (193)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This quotes is a piece of conversation between Lakshmi and another girl who has returned home but was unwelcome. All Lakshmi wants is to go home to her family but now she has fear this is no longer possible. The author uses this to show how she is trapped. Even if she somehow finds a way to leave she has nowhere to go.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">He has the skin of a pig. His hair is the color of straw. His eyes are ice blue. And he is wearing pants that show his hairy monkey legs. (203)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">It is strange to me for Lakshmi to describe this man as though she has never seen a white man before in her life.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">Today I will show her my calculations, the figures I&rsquo;ve checked and rechecked and checked again, the numbers that say I will have paid down my debt - by this time next year. (223)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">This passage reveals how much of Lakshmi&rsquo;s child like naivety about the world she is in. There is no chance that she will be ever let out as long as her captors can make money off her.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">But I wonder, if the crying of a young girl is the same to me as the bleating of horns in the street below, what have I become. (231)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">In this quote the author is showing that after all she has been through Lakshmi has changed, she is much more like the people she passed on the city on her way here. She blocks out everything terrible going on around her.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">She laughs. &ldquo;You think the money goes home to your family?&rdquo; (238)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;"> Lakshmi is once again learning the hard truth of their life. She seems smart enough to figure it out so i think she must just be lying and convincing herself that something good will come of everything terrible about her.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">I can take you to a clean place, he says Look he says, pictures of the shelter. Other girls&rdquo; (247)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Earlier I talked about how Lakshmi is trapped and even if she could escape there would be no place to go. She must be thinking that after all the lies and tricks in her life this is too good to be true.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">It has been three days, and still the pink-skinned man hasn&rsquo;t returned with the good policemen.</span></p>
-                    <p><span style="font-weight: 400;">How stupid I was to believe him and his digital magic (253)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">After being let down so many times Lakshmi feels she will be let down again so after only three days she begins to give up hope. When talking about digital magic the author is not only referring to the camera but also the seemingly impossible feet of helping Lakshmi escape and start a normal life.</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">My name is Lakshmi, I say.</span></p>
-                    <p><span style="font-weight: 400;">I am from Nepal.</span></p>
-                    <p><span style="font-weight: 400;">I am fourteen years old. (263)</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">These words have been repeated several times throughout the book. It helps Lakshmi remember who she is and what she has been through. Sort of like a prayer. The author used it&rsquo;s important to connect parts of the book with a similar mood.</span></p>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">CCQC</span></p>
-                    <p><span style="font-weight: 400;">Any idea even if it seems very obviously untrue to the reader is believable to someone has had no information to contradict it. Throughout the book we learn low Lakshmi sees the world and what she thinks is going on around her. Lakshmi wants to use some of the money she earns to buy a gift for the tea boy instead of sending it all home and she learns the hard truth that her family is not getting any money. &ldquo;She laughs. &lsquo;You think the money goes home to your family?&rsquo; &rdquo; (238). We as readers know that there is no reason for Lakshmi&rsquo;s captors to send any money home but Lakshmi had no way of knowing this. From the time her step father sold her Lakshmi has been told that her family was getting paid this restricted her view of the world around her so she believed it was true. Another area where Lakshmi&rsquo;s ignorance is shown is when she thinks about america. &ldquo;But I do know, from this storybook that this America is a strange place. Everyone there is as rich as a king The birds there are big as men.&rdquo; (174). Logicly to most people it makes no sense that everyone is a king and that you should accept a story book as truth but Lakshmi has not been taught about america and she has no first hand experience so her ideas are formed by stories in a kid&rsquo;s book.</span></p>
-                    <p class="lead">9th Grade - War Correspondents</p>
-                    <p><span style="font-weight: 400;">War correspondents in Iraq can not conduct accurate reporting due to obstacles such as not being able to interact with the local community, violence targeted at reporters, and getting a skewed point of view by working too much with one side. Reporters tell the story of the world around them and if there are obstacles in their way this view can be very small and not reflect on what is really happening leading to inaccurate reporting. The opinions of the world including the people who make policy decisions are heavily influenced by the media so if the media is inaccurate it can have a huge impact on global politics.</span></p>
-                    <p><span style="font-weight: 400;">Being a war correspondent is a dangerous job and many precautions are needed to keep journalists safe. Precautions such as always going out with an armed escort can lead to the reporters being disconnected from the community. Reporters can't talk to strangers and get first hand reports of wars because the risk is too high. Reporter for the Wall Street Journal, Farnaz Fassihi said "Being a foreign correspondent in Baghdad these days is like being under virtual house arrest." The safety of the reporters is not the only concern, it can be dangerous for locals to talk to westerners. If a local shares information with reporters they can become the targets of anyone who wants to keep their story quiet. Talking with an american can also be seen as betrayal of the country. because it is so hard to talk to the people actually affected by war the only source of information can sometimes be politicians with an agenda that give a very bias account of events.</span></p>
-                    <p><span style="font-weight: 400;">Another related issue that can influence reporting is the direct targeting of journalists in violent attacks. When reporters are being targeted they have to do even more than normal to stay safe. This often includes never leaving a hotel. If a reporter can never leave and report on what is really happening in the war they hardly are in a better position to report accurately than a journalist back at home. Sometimes even staying in a hotel all the time is not even enough, in 2004 an american photographer was seized by gunmen just outside his hotel. After that incident many journalists just left the war zone and returned home, it was just too dangerous. Without journalists in the warzone the only reports are from our military and the governments of foreign powers.</span></p>
-                    <p><span style="font-weight: 400;">Journalists are often embedded into military units so they can get close to the action but this can lead to more problems. When journalist are this close to the military they can only get the view of the one side they are with and lose their ability to do unbiased reporting. The views and reasons for fighting on the opposing side are lost and what is left is just the same as what a censored media would produce.</span></p>
-                    <p><br /><br /></p>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div id="OralCommunication">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Oral Communication</h2>
-                    <p class="lead">10th Grade - Pecha Kucha Script</p>
-                    <p class="lead">I can't add a keynote presentation to this site</p>
-                    <p><strong>&nbsp;</strong></p>
-                    <p><a href="http://www.unicef.org/somalia/education.html"><span style="font-weight: 400;">http://www.unicef.org/somalia/education.html</span></a></p>
-                    <p><a href="http://sahanjournal.com/somalia-social-media-internet/#.Vp6Ec6876rU"><span style="font-weight: 400;">http://sahanjournal.com/somalia-social-media-internet/#.Vp6Ec6876rU</span></a></p>
-                    <p><a href="http://www.cdc.gov/tb/publications/guidestoolkits/ethnographicguides/somalia/chapters/chapter2.pdf"><span style="font-weight: 400;">http://www.cdc.gov/tb/publications/guidestoolkits/ethnographicguides/somalia/chapters/chapter2.pdf</span></a></p>
-                    <p><a href="http://borgenproject.org/primary-education-somalia-u-s/"><span style="font-weight: 400;">http://borgenproject.org/primary-education-somalia-u-s/</span></a></p>
-                    <p><a href="http://www.everyculture.com/Africa-Middle-East/Somalis-Sociopolitical-Organization.html"><strong>http://www.everyculture.com/Africa-Middle-East/Somalis-Sociopolitical-Organization.html</strong></a></p>
-                    <p><a href="http://www.bbc.com/news/world-africa-26973587"><strong>http://www.bbc.com/news/world-africa-26973587</strong></a></p>
-                    <p><a href="http://www.theguardian.com/world/2012/may/04/somalia-video-game-boom-al-shabaab"><strong>http://www.theguardian.com/world/2012/may/04/somalia-video-game-boom-al-shabaab</strong></a></p>
-                    <p><a href="http://foreignpolicy.com/2015/08/06/somalias-incredible-shrinking-election-hassan-sheikh-mohamud/"><strong>http://foreignpolicy.com/2015/08/06/somalias-incredible-shrinking-election-hassan-sheikh-mohamud/</strong></a></p>
-                    <p><a href="http://www.pbs.org/wnet/need-to-know/culture/somalia-is-a-&lsquo;nation-of-poets&rsquo;/770/"><strong>http://www.pbs.org/wnet/need-to-know/culture/somalia-is-a-&lsquo;nation-of-poets&rsquo;/770/</strong></a></p>
-                    <p><a href="http://hornofafrica.ssrc.org/dewaal/"><strong>http://hornofafrica.ssrc.org/dewaal/</strong></a></p>
-                    <p><a href="http://www.so.undp.org/content/somalia/en/home/countryinfo.html"><strong>http://www.so.undp.org/content/somalia/en/home/countryinfo.html</strong></a></p>
-                    <p><a href="http://somaliaholland.free.fr/somali_social_structure.htm"><strong>http://somaliaholland.free.fr/somali_social_structure.htm</strong></a></p>
-                    <p><strong>http://news.yahoo.com/rage-keeps-somali-boys-off-street-video-games-154413326--finance.html</strong></p>
-                    <p><strong>http://www.citylab.com/design/2013/10/fascinating-glimpse-daily-life-mogadishu/7300/</strong></p>
-                    <p><strong><strong><br /><br /></strong></strong></p>
-                    <p><span style="font-weight: 400;">Intro - Sebastian:</span></p>
-                    <p><span style="font-weight: 400;">1: Country located in east africa and borders both ethiopia and kenya. Just south of the arabian peninsula. Touches indian ocean. &nbsp;</span><span style="font-weight: 400;">Flat plateaus throughout the country. Mountains in the south. </span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">2: Geography, Climate - challenges it causes.</span><span style="font-weight: 400;"> Periodic monsoons, with dry humid gaps in between. Both droughts and floods common. 100% of electricity is generated by fossil fuels. Low CO2 emissions due to small size and poverty. Deforestation and desertification as a result of cutting trees for burning. Remote beaches have been used to dump toxic and nuclear waste.</span></p>
-                    <p><span style="font-weight: 400;">3: &nbsp;&nbsp;&nbsp;Economy, Culture - Divide between the educated and the poor. Somalia is incredibly poor It has the lowest gap per capita in the world. Urban areas are significantly more wealthy and people have access to non agricultural jobs. In rural areas often the only employment is physical labor and agriculture. </span><span style="font-weight: 400;">Clan leaders and some politicians hold a lot of power in their communities and typically live in rural areas.</span></p>
-                    <p><span style="font-weight: 400;">4: Conflicts, civil war - who is fighting and why, what it means for normal people. Insurgent groups have been pushed way and weakened but there is still a lot of terrorist attacks. Living in a city where there are more jobs and schools </span></p>
-                    <p><span style="font-weight: 400;">5: Government - Parliament however not democratically elected, clan leaders in control. Who this benefits and who is left behind. President claims there will be democratic elections but always cancels before the next election.</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">Define Childhood - Nathan:</span></p>
-                    <p><span style="font-weight: 400;">6)Child soldiers are a scary thought for us here in the United States but in Somalia it is often a get away for the kids that have been left on the streets by their poor parents who can't afford to keep them. The children are forced to Shine shoes for hours a day for money to buy food for themselves and even sibling and friends who have been left on the street as well.</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">7)They also scavenge for food in dumpsters and ask restaurants and local businesses if there is any extra food or leftovers before they get thrown away. Their other option is to turn to child soldiering where they will at least get some food and a roof over their heads instead of living on the side of the road in a box.</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">8)Seeing homeless children is common because there are an estimated 4,000 street kids in just the capital Mogadishu alone. Which means that the number is much larger for the entire country which puts a lot of pressure on restaurants and local businesses because often these kids are trying to get food from them so they can have a meal before they find a place sleep.</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">9) often you find large groups of boys packing themselves into small rooms to huddle around small tv&rsquo;s which is a pastime that's helped these boys enjoy some time off the streets</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">10) Somali children find themselves working in fields harvesting the available crops for multiple hours a day or asking people for work or money just to make enough to feed themselves</span></p>
-                    <p><strong><strong><br /><br /></strong></strong></p>
-                    <p><span style="font-weight: 400;">Joy and Education -Nathan</span></p>
-                    <p><span style="font-weight: 400;">11)the 1991 somali civil war that overthrew Mohammed Siad Barre, but it also destroyed three quarters of the school system in central southern Somalia with a 37.8 literacy rate there are few government funded school system and most schools are run be either local or international Non-Government Organizations</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">12)Primary education:grade 1-4 ages 6-10 9 subjects English is 2nd language. Middle education:grades 5-8 ages 11-14 subjects include Somali, Islamic studies, English, maths, science, social studies, geography and history.</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">13)secondary education:grades 9-12 ages 15-18 final mandatory stage of Somali education</span></p>
-                    <p><span style="font-weight: 400;">Vocational education:In the non-formal education sector unemployed adults and young people may receive adult literacy and vocational skills training. </span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">14)many children enjoy playing soccer on large dirt plots with makeshift goals, doing track and field sports, playing basketball with homemade hoops and practicing martial arts</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">15) as the children grow up many continue in track and field sports, and many Somali athletes have gone to the Olympics for track and field</span></p>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">Why it matters/ Conclusion/ What should be done -Sebastian</span></p>
-                    <p><span style="font-weight: 400;">16: investment in education- The few that have an opportunity to get a good education are living a relatively nice live compared to the rest of somalia. The government needs to act and spend much more on education especially in rural areas so those children can have an equal start at greatness in their lives.</span></p>
-                    <p><span style="font-weight: 400;">17: Democratic elections - In order for the voice of the people to start change they need power in the government. The government will not act in the interests of its people if they are never held accountable. </span></p>
-                    <p><span style="font-weight: 400;">18: Joy - Children in somalia will never be able to experience the complete joy of childhood until they are out of extreme poverty. They do not need to live in riches but once they have enough to stop working from a very young age they can start bringing much more joy into their lives. They will have time to play with a makeshift soccer ball in an empty field.</span></p>
-                    <p><span style="font-weight: 400;">19: Everyone has a right to this joy as a child but too many don&rsquo;t. In such a war torn and poverty stricken country even amazing governmental leadership it will be a long time before conditions improve significantly. There needs to be a large effort from the international community including large investment in the country that could have huge potential.</span></p>
-                    <p><span style="font-weight: 400;">20: Conclude - It is our duty as fellow citizens on this planet to help each other and blah blah blah. Thank you</span></p>
-                    <p><strong><span style="font-weight: 400;">21 Bibliography</span></strong></p>
-                    <p><strong><span style="font-weight: 400;">References</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">About Somalia. (n.d.). Retrieved from http://www.so.undp.org/content/somalia/en/home/countryinfo.html</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Bynes, M. (2013). A Fascinating Glimpse of Daily Life in Mogadishu. Retrieved from http://www.citylab.com/design/2013/10/fascinating-glimpse-daily-life-mogadishu/7300/</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Chapter 5. Two Heroes of Somali Nationalism. (n.d.). Somali Nationalism International Politics and the Drive for Unity in the Horn of Africa. doi:10.4159/harvard.9780674594364.c7</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Dahir, A. L. (2014, November 20). Somali Social Media Users Offer the World a Glimpse Into Their Daily Lives - Sahan Journal. Retrieved from http://sahanjournal.com/somalia-social-media-internet/#.Vp6Ec6876rU</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Eastern Africa: Eritrea, Ethiopia, Kenya, Somalia, and Sudan. (n.d.). Retrieved from http://www.worldwildlife.org/ecoregions/at0715</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Guled, A. (2012, May 4). New rage keeps Somali boys off street: Video games. Retrieved from http://news.yahoo.com/rage-keeps-somali-boys-off-street-video-games-154413326--finance.html</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Mccormick, T. (2015, August 6). Somalia's Incredible Shrinking Election. Retrieved from http://foreignpolicy.com/2015/08/06/somalias-incredible-shrinking-election-hassan-sheikh-mohamud/</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Mohammed, H. (2015, September 16). Kenya's wildlife flees al-Shabab conflict into Somalia. Retrieved from http://www.aljazeera.com/news/2015/09/kenya-wildlife-flees-al-shabab-conflict-somalia-150916085912634.html</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Primary Education in Somalia and the U.S. - The Borgen Project. (2014, June 09). Retrieved from http://borgenproject.org/primary-education-somalia-u-s/</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somali Social Structure. (n.d.). Retrieved from http://somaliaholland.free.fr/somali_social_structure.htm</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalia aims to get a million more children into school. (2013, September 8). Retrieved from http://www.bbc.com/news/world-africa-24010086</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalia country profile. (2015, September 8). Retrieved from http://www.bbc.com/news/world-africa-14094503</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalia in high speed internet 'culture shock' - BBC News. (2014, April 10). Retrieved from http://www.bbc.com/news/world-africa-26973587</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalia video games boom dents al-Shabaab recruitment. (2012, May 4). Retrieved from http://www.theguardian.com/world/2012/may/04/somalia-video-game-boom-al-shabaab</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalia. (n.d.). Retrieved from http://topics.nytimes.com/top/news/international/countriesandterritories/somalia/index.html</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalia. (n.d.). Retrieved from http://www.unicef.org/somalia/education.html</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Somalis - Sociopolitical Organization. (n.d.). Retrieved from http://www.everyculture.com/Africa-Middle-East/Somalis-Sociopolitical-Organization.html</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Teal, G. (2010, May 18). Somalia is a 'nation of poets' Retrieved from http://www.pbs.org/wnet/need-to-know/culture/somalia-is-a-%E2%80%98nation-of-poets%E2%80%99/770/</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Waal, A. (2007, February 20). Class and Power in a Stateless Somalia. Retrieved from http://hornofafrica.ssrc.org/dewaal/</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">The World Fact Book. (n.d.). Retrieved from https://www.cia.gov/library/publications/the-world-factbook/geos/so.html</span></strong></p>
-                    <p class="lead">9th Grade - Podcast</p>
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199881092&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                    <p><span style="font-weight: 400;">Alec (nazi super weapons):</span></p>
-                    <ul>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">Who started the arms war</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">How would the war have been different without the rapid advancements made by the Nazis</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">What canceled projects could have changed the tide</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">The cost of these projects</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">How they influenced future projects</span></li>
-                    </ul>
-                    <p><strong><strong>&nbsp;</strong></strong></p>
-                    <p><span style="font-weight: 400;">Sebastian:</span></p>
-                    <ul>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">What is possible today, background on drone warfare</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">Costs of drone warfare</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">Does the advancement of technology make war better or worse?</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">How drones make normal civilians less involved in warfare reducing democracy</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">Regulation is slower than innovation.</span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">What drones mean for the future of warfare</span></li>
-                    </ul>
-                    <p><strong><strong><br /><br /></strong></strong></p>
-                    <p><span style="font-weight: 400;">Calvin:</span></p>
-                    <ul>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">The first idea of tanks was 1914 &nbsp;by Germany </span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">The french had the best tanks </span></li>
-                    <li style="font-weight: 400;"><span style="font-weight: 400;">Germany's tanks were terrible </span></li>
-                    </ul>
-                    <p><strong><strong><br /><br /><br /><br /></strong></strong></p>
-                    <p><span style="font-weight: 400;">Podcast Storyboard</span></p>
-                    <table>
-                    <tbody>
-                    <tr>
-                    <td>
-                    <p><strong>Podcast (Program Name)</strong></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;"> Technology and War </span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Name (Episode Title)</strong></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;"> The Thunder of War</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Artist (Your Names)</strong></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;"> Alec, Sebastian, Calvin</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Album Artist</strong></p>
-                    </td>
-                    <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Composer (Music)</strong></p>
-                    </td>
-                    <td>&nbsp;</td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <table>
-                    <tbody>
-                    <tr>
-                    <td>
-                    <p><strong>Intro</strong></p>
-                    <p><em><span style="font-weight: 400;">Program Name, Short Description, Location</span></em></p>
-                    </td>
-                    <td>
-                    <p><strong>Music</strong></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;">Tech and War, how technology has advanced throughout wartime</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Intro music:</span></p>
-                    <p><span style="font-weight: 400;">Music Loop #</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Teaser/Overview</strong></p>
-                    <p><em><span style="font-weight: 400;">Host names and what this episode is about</span></em></p>
-                    </td>
-                    <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;"> Alec, Sebastian, Calvin. The episode is about how technology advanced and changed the tide of wars. </span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Bumper music:</span></p>
-                    <p><span style="font-weight: 400;">Music Loop #</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Content</strong></p>
-                    <p><em><span style="font-weight: 400;">Script of this episode</span></em></p>
-                    </td>
-                    <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;"> start with advancements in ww1</span></p>
-                    <p><span style="font-weight: 400;">Advancements of ww2</span></p>
-                    <p><span style="font-weight: 400;">Advancements in modern warfare</span></p>
-                    <p><span style="font-weight: 400;">How they have affected the world</span></p>
-                    <p><span style="font-weight: 400;">The cost/ benefits of advancement of technology</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Bumper music:</span></p>
-                    <p><span style="font-weight: 400;">Music Loop #</span></p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><strong>Outro</strong></p>
-                    <p><em><span style="font-weight: 400;">Thanks, Goodbye</span></em></p>
-                    </td>
-                    <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <p><span style="font-weight: 400;"> If you have further questions about tonight's program, please dont be afraid to ask questions in the comment section below.</span></p>
-                    <p><span style="font-weight: 400;">Thank you for tuning in, see you next time.</span></p>
-                    </td>
-                    <td>
-                    <p><span style="font-weight: 400;">Closing music:</span></p>
-                    <p><span style="font-weight: 400;">Music Loop #</span></p>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-    <div class="content-section-a" id="Agency">
-
-        <div class="container">
-            <div class="row" >
-              <h2 class="section-heading">Agency</h2>
-              <p class="lead">10th Grade</p>
-              <p><span style="font-weight: 400;">Meeting Benchmarks</span></p>
-              <p><span style="font-weight: 400;">Yes, I met all the benchmarks on time however the first research benchmark was not my best work. I mostly just answered the questions without looking at the bigger picture. Next time to help with this I need to make sure to read over the driving questions as I am doing the research so I don&rsquo;t loose focus. By completing the benchmarks on time I never fell behind making it much more easy to complete the final project in high quality and not just rush it at the end.</span></p>
-              <p><strong>Seeking Feedback</strong></p>
-              <p><strong><span style="font-weight: 400;">I was always ready to seek feedback from my team members and my teachers. This ensured that my final project was high quality. I read all the feedback about my work on echo and used it to improve on the next benchmark. We were rushing to finish our script and practice so we never got a chance to get feedback from another team. I think this would have been helpful.</span></strong><br /><br /></p>
-              <p class="lead">9th Grade</p>
-              <p><span style="font-weight: 400;">4/1/15</span></p>
-              <p><span style="font-weight: 400;">How did I use agency today?</span></p>
-              <p><span style="font-weight: 400;">In all the stations I monitored my own learning so I could improve my work. I got and gave good feedback in the peer editing workshop. I had trouble keeping with journalistic style in my first draft so in the writing workshop I read some news articles and started revising my article to better match the style. I could turn in my final draft now but I could improve a lot and I will do that before friday. I am very good at learning on my own if it is a topic I am interested in, I can research from reliable sources well. Sometimes I procrastinate and have to do too much in a few nights.</span></p>
-              <p><strong><strong>&nbsp;</strong></strong></p>
-              <p><span style="font-weight: 400;">-------------------------------------------------------------------------------------------------------------------------------</span></p>
-              <p><span style="font-weight: 400;">Grows from setbacks: This is a long project with many parts at some time there will be a setback. I need to learn to use these setbacks to my advantage and grow as a student. my first outline for this project did not have a clear focus and I had to mostly redo it but this made my writing much better.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Meets benchmarks: In a project like this if you fall behind on one part it can be easy to be late on the whole project that is why it is important to meet benchmarks. I am on track to have my rough draft done today.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Uses effort to grow and improve: Even the best at anything can always improve in this project that means making many drafts and revising. I always put effort into my writing but sometimes when I already have a high grade but I know i can do better I don't do the extra work.</span></p>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b" id="code">
-
-        <div class="container">
-            <div class="row" style="margin-bottom:32px;">
-              <h2 class="section-heading">Code</h2>
-              I can code. You can se my code on <a href="http://www.github.com/SebastianBoyd>GitHub</a>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Contact Sebastian Boyd:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/elonmusk" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/SebastianBoyd" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; SB Technology Holdings International 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
+    <script src="material.min.js"></script>
+  </body>
 </html>
