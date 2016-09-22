@@ -88,13 +88,13 @@
             <h2>Projects</h2>
             <h3>Smart Irrigation Timer</h3>
               <p>
-                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+                Last year I entered in a competition run by Samsung called Makers Against Drought. The goal was to help reduce the impact of the drought using the internet of things. Samsung provided each entrant with a Samsung ARTIK development board to work with.
               </p>
               <p>
-                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+                My entry was a smart irrigation timer that changes the watering schedule based on the weather. It was designed to work with existing irrigation systems, just replacing the main valve controller. The Samsung dev board had an Arduino like interface so it was relatively easy to interface with some relays to control the valves. There was only simple software that triggered the relays based on a schedule given by an api running on the samsung device, the most important piece was the cloud api it got its daily schedule from. The cloud service gets its data from the California Department of Water Resources’ California Irrigation Management Information System (they like concise and memorable names). That system provides raw daily rainfall and evapotranspiration data. I normalized that data to percentage value compared to a very hot summer day so I could apply it to the user’s schedule.  This method works without asking them to input lots of data they probably don’t know such as the type of soil, hours of sun per day, and irrigation system flow rate per square foot.
               </p>
               <p>
-                Tempor tempor aliqua in commodo cillum Lorem magna dolore proident Lorem. Esse ad consequat est excepteur irure eu irure quis aliqua qui. Do mollit esse veniam excepteur ut veniam anim minim dolore sit commodo consequat duis commodo. Sunt dolor reprehenderit ipsum minim eiusmod eu consectetur anim excepteur eiusmod. Duis excepteur anim dolor sit enim veniam deserunt anim adipisicing Lorem elit. Cillum sunt do consequat elit laboris nisi consectetur.
+                My system won me an honorable mention in the competition, beating many people with impressive degrees and years of experience in the field. The honorable mention came with a prize of $2000. After the contest was over, I continued to work on the project. I realized that Samsung's device was hugely overpowered resulting in a overly complex and expensive system. I am now working on a new version with the esp8266 chip as my main controller. The esp8266 is a $1.80 chip that replaces the ~$100 chip provided by Samsung. With this change I think I will be able to finish it with only around $15 in parts.
               </p>
             <h3>Machine Learning Style Detection</h3>
               <p>
@@ -139,7 +139,6 @@
             <ul class="mdl-mini-footer--link-list">
               <li><a href="mailto:sebastian.boyd.1@gmail.com">Contact</a></li>
               <li><a href="https://github.com/sebastianboyd">Github</a></li>
-              <li><a href="#">User Agreement</a></li>
             </ul>
           </div>
         </footer>
