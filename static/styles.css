@@ -15,11 +15,9 @@
  */
 
 .demo-ribbon {
-  width: 100%;
+  width: auto;
+  object-fit: cover;
   height: 80vh;
-  background-image: url('images/bg4.jpg');
-  background-position: center center;
-  background-size: cover;
   flex-shrink: 0;
 }
 
