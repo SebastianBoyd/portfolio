@@ -1,0 +1,13 @@
+{
+  "short_name": "Sebastian Boyd",
+  "name": "Sebastian Boyd's Portfolio",
+  "icons": [
+    {
+      "src": "images/icon-3x.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "browser"
+}

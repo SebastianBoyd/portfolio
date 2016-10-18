@@ -18,6 +18,10 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sebastian Boyd is a python programmer who wants to learn about machine learning.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -26,6 +30,7 @@
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <meta name="theme-color" content="#2196f3">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +41,7 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="manifest" href="manifest.json">
 
     <link rel="shortcut icon" href="images/favicon.png">
 
@@ -61,6 +67,11 @@
     </style>
   </head>
   <body>
+    <amp-install-serviceworker src="/sw.js"
+      data-iframe-src="https://ampbyexample.com/sw.html"
+      layout="nodisplay">
+    </amp-install-serviceworker>
+
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--blue-500 mdl-color-text--white">
         <div class="mdl-layout__header-row">
@@ -73,12 +84,14 @@
             </svg>
           </a>
           <a class="mdl-button mdl-js-button mdl-button--icon" href="mailto:sebastian.boyd.1@gmail.com" for="email">
-            <i class="material-icons">email</i>
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#ffffff" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+            </svg>
           </a>
         </div>
       </header>
       <img class="demo-ribbon" src="images/bg.jpg"
-           srcset="images/bg-1x.jpg 1x, images/bg-2x.jpg 2x, images/bg-3x.jpg 3x, images/bg-4x.jpg 4x, images/bg-8x.jpg 8x"></img>
+           srcset="images/bg-1x.jpg 520w, images/bg-2x.jpg 1040w, images/bg-3x.jpg 1560w, images/bg-4x.jpg 2080w, images/bg-8x.jpg 4160w"></img>
       <main class="demo-main mdl-layout__content">
         <div class="demo-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -133,6 +146,6 @@
         </footer>
       </main>
     </div>
-    <script src="material.min.js"></script>
+    <!-- <script src="material.min.js"></script> -->
   </body>
 </html>
