@@ -22,7 +22,8 @@ const PRECACHE_URLS = [
   'index.html',
   './', // Alias for index.html
   'styles.css',
-  'images'
+  'images',
+  'manifest.json'
 ];
 
 // The install handler takes care of precaching the resources we always need.
