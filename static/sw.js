@@ -22,8 +22,10 @@ const PRECACHE_URLS = [
   'index.html',
   './', // Alias for index.html
   'styles.css',
-  'images',
-  'manifest.json'
+  'images/bg-2x.jpg',
+  'images/icon-3x.png',
+  'manifest.json',
+  'https://cdn.ampproject.org/v0.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
