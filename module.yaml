@@ -1,9 +1,7 @@
-application: sebastian-portfolio   # since we use -A this is irrelevant
-version: acme-0
 runtime: python27
 threadsafe: true
 api_version: 1
-module: acme
+service: acme
 default_expiration: 1m
 
 handlers:

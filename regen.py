@@ -130,9 +130,10 @@ def gen(test, appid, domains, acme_path, app_path, email):
 
     # Deploy to AppEngine
     cmd = [
-        'appcfg.py',
-        'update',
-        '-A', appid,
+        'gcloud',
+        'app',
+        'deploy',
+        '--project', appid,
         path.join(app_path, MODULE_CONFIG)
     ]
     print("$ " + Fore.MAGENTA + " ".join(cmd) + Fore.RESET)
